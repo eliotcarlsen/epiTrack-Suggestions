@@ -13,7 +13,7 @@ $(document).ready(function(){
     var sumOfAll = sumOfQ3Q4 + sumOfQ2Q6 + sumOfQ1Q5
     var userInputName = $("#userName").val();
     var userInputEmail = $("#userEmail").val();
-
+    debugger;
     if (15 >= sumOfAll) {
       $(".java, .php, .csharp").hide();
       $(".none").show();
