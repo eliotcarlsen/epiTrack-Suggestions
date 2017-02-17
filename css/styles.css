@@ -5,3 +5,20 @@
 .jumbotron {
   background-color: #a4a6a8
 }
+
+button {
+  margin-top: 50px;
+}
+
+h4 {
+  color: blue;
+}
+
+h4 label {
+  margin-top: 50px;
+  margin-bottom: 25px;
+}
+
+select {
+  margin-bottom: 25px;
+}
