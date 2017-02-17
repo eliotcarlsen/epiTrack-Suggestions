@@ -13,23 +13,29 @@ $(document).ready(function(){
     var sumOfAll = sumOfQ3Q4 + sumOfQ2Q6 + sumOfQ1Q5
     var userInputName = $("#userName").val();
     var userInputEmail = $("#userEmail").val();
+    debugger;
     if (14 >= sumOfAll) {
-      $(".java, .php, .csharp").hide();
+      $(".java, .php, .csharp, .all").hide();
       $(".none").show();
       $(".name").empty().append(userInputName);
     } else if ((10 <= sumOfQ1Q5) && (sumOfQ1Q5 > sumOfQ2Q6) && (sumOfQ1Q5 > sumOfQ3Q4)) {
-      $(".none, .php, .csharp").hide();
+      $(".none, .php, .csharp, .all").hide();
       $(".java").show();
       $(".name").empty().append(userInputName);
       $(".email").empty().append(userInputEmail);
     } else if ((10 <= sumOfQ2Q6) && (sumOfQ2Q6 > sumOfQ1Q5) && (sumOfQ2Q6 > sumOfQ3Q4)) {
-      $(".java, .none, .csharp").hide();
+      $(".java, .none, .csharp, .all").hide();
       $(".php").show();
       $(".name").empty().append(userInputName);
       $(".email").empty().append(userInputEmail);
     } else if ((10 <= sumOfQ3Q4) && (sumOfQ3Q4 > sumOfQ1Q5) && (sumOfQ3Q4 > sumOfQ2Q6)) {
-      $(".java, .php, .none").hide();
+      $(".java, .php, .none, .all").hide();
       $(".csharp").show();
+      $(".name").empty().append(userInputName);
+      $(".email").empty().append(userInputEmail);
+    } else if ((sumOfQ1Q5 === sumOfQ3Q4) && (sumOfQ1Q5 === sumOfQ2Q6) && (sumOfQ3Q4 === sumOfQ2Q6)) {
+      $(".java, .php, .none, .csharp").hide();
+      $(".all").show();
       $(".name").empty().append(userInputName);
       $(".email").empty().append(userInputEmail);
     }
