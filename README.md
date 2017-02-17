@@ -32,5 +32,4 @@ _jquery_
 
 ### License
 
-
 Copyright (c) 2016 **_Eliot Carlsen_**
