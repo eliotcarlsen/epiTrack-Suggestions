@@ -13,7 +13,6 @@ $(document).ready(function(){
     var sumOfAll = sumOfQ3Q4 + sumOfQ2Q6 + sumOfQ1Q5
     var userInputName = $("#userName").val();
     var userInputEmail = $("#userEmail").val();
-    debugger;
     if (14 >= sumOfAll) {
       $(".java, .php, .csharp, .all").hide();
       $(".none").show();
@@ -38,6 +37,8 @@ $(document).ready(function(){
       $(".all").show();
       $(".name").empty().append(userInputName);
       $(".email").empty().append(userInputEmail);
+    } else {
+      alert ("Please fill out all fields to find your ideal Epicodus class.")
     }
   });
 });
