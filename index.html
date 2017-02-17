@@ -12,13 +12,43 @@
   <body>
 
     <div class="container">
+      <form class="form">
+
+
       <h4>What Kind of Developer are You?</h4>
       <h5>Take the quiz to find out!</h5>
+      <div class="form-group">
+        <label for="name">Enter Your Name!</label>
+        <input id="name" class="form-control" type="text">
+      </div>
+      <div class="form-group">
+          <label for="email">Enter Your Email!</label>
+          <input id="email" class="form-control" type="text">
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
       <label>"How much do you identify with these statements?"
       <label>"I want to work for a larger company doing business software development."</label>
-      <select class="form-control" id="question1">
+      <select class="form-control" id="question4">
         <option value="1">Strongly Agree</option>
         <option value="2">Agree</option>
         <option value="3">Neutral</option>
@@ -26,7 +56,7 @@
         <option value="5">Strongly Disagree</option>
       </select>
       <label>"I want to work on Android user interfaces as an Android developer."</label>
-      <select class="form-control" id="question1">
+      <select class="form-control" id="question5">
         <option value="1">Strongly Agree</option>
         <option value="2">Agree</option>
         <option value="3">Neutral</option>
@@ -34,15 +64,20 @@
         <option value="5">Strongly Disagree</option>
       </select>
       <label>"I want to build and design websites."</label>
-      <select class="form-control" id="question1">
+      <select class="form-control" id="question6">
         <option value="1">Strongly Agree</option>
         <option value="2">Agree</option>
         <option value="3">Neutral</option>
         <option value="4">Disagree</option>
         <option value="5">Strongly Disagree</option>
       </select>
+    </form>
+    <button type="submit" class="button">Find out your track!</button>
 
 
+
+
+    <div class="output"></div>
       <div class="answers">
         <div class="csharp">
           <h6>You got C#!</h6>
