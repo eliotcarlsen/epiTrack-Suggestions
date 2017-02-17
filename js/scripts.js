@@ -14,15 +14,18 @@ $(document).ready(function(){
     var userInputName = $("#userName").val();
     console.log(userInputName);
     console.log(sumOfAll);
-
     if (15 >= sumOfAll) {
       $(".none").show();
       $(".name").empty().append(userInputName);
-
-    } else {
+    } else if (10 <= sumOfQ1Q5) {
+      $(".java").show();
+      $(".name").empty().append(userInputName);
+    } else if (10 <= sumOfQ2Q6) {
+      $(".php").show();
+      $(".name").empty().append(userInputName);
+    } else if (10 <= sumOfQ3Q4) {
       $(".csharp").show();
       $(".name").empty().append(userInputName);
-
     }
 
 
