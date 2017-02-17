@@ -13,7 +13,7 @@ $(document).ready(function(){
     var sumOfAll = sumOfQ3Q4 + sumOfQ2Q6 + sumOfQ1Q5
     var userInputName = $("#userName").val();
     var userInputEmail = $("#userEmail").val();
-    if (12 >= sumOfAll) {
+    if (14 >= sumOfAll) {
       $(".java, .php, .csharp").hide();
       $(".none").show();
       $(".name").empty().append(userInputName);
@@ -33,7 +33,5 @@ $(document).ready(function(){
       $(".name").empty().append(userInputName);
       $(".email").empty().append(userInputEmail);
     }
-
-
   });
 });
